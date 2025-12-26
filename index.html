@@ -20,7 +20,7 @@
        dark:text-white transition-colors duration-300">
 
             <!-- Navigation bar starts -->
-           <nav class="bg-indigo-900 dark:bg-gray-900 text-white relative z-50 flex justify-between items-center">
+           <nav class="bg-indigo-900 dark:bg-gray-900 text-white relative z-50 flex justify-between items-center cursor-pointer">
             <div class="text-white flex mx-4">
                 <img class="w-[90px] rounded-md"
                 src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/NIT_Rourkela_Colour_Logo.svg/330px-NIT_Rourkela_Colour_Logo.svg.png">
@@ -33,8 +33,8 @@
             <div class=" text-white hidden md:flex">
                 <div> Home </div>
                 <div class="mx-2.5">Skills</div>
-                <div class="mx-2.5">Project</div>
-                <div class="mx-2.5">Contact</div>
+                <div href="https://github.com/anshuman04-source/webwiz-induction-task" class="mx-2.5">Project</div>
+                <div href="tel:8984584811" class="mx-2.5 hover:bg-gray-800">Contact</div>
             </div>
             <div>
                     <button id="menu-btn" class="flex md:hidden  cursor-pointer focus:outline
@@ -96,20 +96,22 @@
                 </div class="mt-10 justify-center
                 flex gap-6">  
                 <div>
-                <button class="font-semibold px-6 py-3
+                <a class="font-semibold px-6 py-3
                 bg-indigo-300 text-white
                 rounded-lg hover:bg-white
                 hover:text-black transition
-                active:bg-slate-700 active:text-white">
+                active:bg-slate-700 active:text-white"
+                href="https://github.com/anshuman04-source/webwiz-induction-task">
                     View My Project
-                </button>
+                </a>
 
-                <button class="px-6 py-3 bg-indigo-300 text-white
+                <a class="px-6 py-3 bg-indigo-300 text-white
                 hover:text-black transition
                 active:bg-slate-600
-                active:text-white">
+                active:text-white"
+                href="tel:8984584811">
                     Contact Me
-                </button>
+                </a>
                 </div>
 
                 <div class="absolute bottom-6 place-content-ce animate-bounce
