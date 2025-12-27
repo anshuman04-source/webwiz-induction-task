@@ -8,7 +8,26 @@
   <meta name="viewport" 
   content="width=device-width, initial-scale=1.0" />
   <link href="./output.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+ <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        animation: {
+          fadeUp: "fadeUp 1s ease-out forwards",
+        },
+        keyframes: {
+          fadeUp: {
+            "0%": { opacity: "0", transform: "translateY(20px)" },
+            "100%": { opacity: "1", transform: "translateY(0)" },
+          },
+        },
+      },
+    },
+  };
+</script>
+
 
   
 
@@ -43,14 +62,14 @@
                     </button>
 
                     <div id="mobile-menu" 
-                    class="hidden absolute top-full right-6   bg-indigo-900 rounded-2xl overflow-hidden
-                    dark:bg-gray-900 dark:text-black border 
+                    class="hidden absolute top-[70px] right-6   bg-indigo-900 rounded-2xl
+                    dark:bg-gray-800 dark:text-white text-gray-400 border 
                     dark:border-gray-700">
                     <a id href="https://anshuman04-source.github.io/webwiz-induction-task/" ="home"
                     class="block px-4 py-3 hover:bg-gray-100">Home</a>
                     <a id="skills"
                     class="block px-4 py-3 hover:bg-gray-100">Skills</a>
-                    <a id="project" href="https://github.com/anshuman04-source/webwiz-induction-task">
+                    <a id="project" href="https://github.com/anshuman04-source/webwiz-induction-task"
                     class="block px-4 py-3 hover:bg-gray-100">Project</a>
                     <a id="contact" href="tel:8948584811"
                     class="block px-4 py-3 hover:bg-gray-100">Contact</a>
@@ -79,11 +98,10 @@
                 alt="background">
 
                 <div class="absolute inset-0 flex flex-col items-center justify-center px-6">
-                 <h1 class="text-gray-900 dark:text-white text-3xl md:5xl font:semibold
-                 italic tracking-wide drop-shadow-lg translate-x-4 
-                 animate-pulse">
-                    Hi, I am <span class="bg-gradient-to-r from-indigo-900/40 to-purple-900/40
-                    animate-pulse"> Anshuman </span>
+                 <h1 class="text-gray-900 dark:text-white text-3xl md:text-5xl font-semibold
+                 italic tracking-wide drop-shadow-lg translate-x-4 opacity-0
+                 animate-fadeUp">
+                    Hi, I am <span class="bg-gradient-to-r from-indigo-900/40 to-purple-900/40"> Anshuman </span>
                     <span class="inline-block animate-bounce">&#128075;</span></h1>
                  <p class="text-gray-900 dark:text-white text-lg md:2xl font:semibold 
                  italic tracking-wide drop-shadow-lg translate-x-4 
@@ -99,7 +117,9 @@
                 <a class="font-semibold px-6 py-3
                 bg-indigo-300 text-white
                 rounded-lg hover:bg-white
-                hover:text-black transition
+                hover:text-black transition-all
+                hover:scale-105 hover:drop-shadow-lg
+                active:scale-95
                 active:bg-slate-700 active:text-white"
                 href="https://github.com/anshuman04-source/webwiz-induction-task">
                     View My Project
@@ -144,7 +164,8 @@
                 Project
                 </div>
 
-                <div class="bg-gray-800 rounded-xl p-6 hover:-translate-y-2 transition">
+                <div class="bg-gray-800 rounded-xl p-6 hover:-translate-y-2 transition-all
+                duration-300 hover:translate-y-2 hover:shadow-xl">
                     <h1 class="text-2xl font-semibold mb-2"> Portfolio Website </h1>
                     <p class="opacity-80 mb-2">Personal responsive portfolio</p>
                     <p class="justify-between text-sm mt-4">
@@ -160,11 +181,21 @@
 
                         <div class="flex flex-wrap justify-center
                         gap-6 px-6">
-                            <span class="px-6 py-3 border rounded-lg">HTML</span>
-                            <span class="px-6 py-3 border rounded-lg">CSS</span>
-                            <span class="px-6 py-3 border rounded-lg">JS</span>
-                            <span class="px-6 py-3 border rounded-lg">Tailwind</span>
-                            <span class="px-6 py-3 border rounded-lg">C++</span>
+                            <span class="px-6 py-3 border rounded-lg
+                            transition-all duration-300 hover:bg-indigo-400
+                            hover:text-black hover:scale-110">HTML</span>
+                            <span class="px-6 py-3 border rounded-lg
+                            transition-all duration-300 hover:bg-indigo-400
+                            hover:text-black hover:scale-110">CSS</span>
+                            <span class="px-6 py-3 border rounded-lg
+                            transition-all duration-300 hover:bg-indigo-400
+                            hover:text-black hover:scale-110">JS</span>
+                            <span class="px-6 py-3 border rounded-lg
+                            transition-all duration-300 hover:bg-indigo-400
+                            hover:text-black hover:scale-110">Tailwind</span>
+                            <span class="px-6 py-3 border rounded-lg
+                            transition-all duration-300 hover:bg-indigo-400
+                            hover:text-black hover:scale-110">C++</span>
                         </div>
 
                         <!-- project and skills card end -->
