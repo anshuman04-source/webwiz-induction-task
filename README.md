@@ -3,6 +3,7 @@
 Name: Anshuman Bebarta
 Roll Number: 125ME0091
 Branch: Mechanical
+Domain: Web developer
 Topic: Personal Portfolio (Beginner Web Developer)
 
 PROJECT OVERVIEW
@@ -38,3 +39,19 @@ HTML5 – Semantic structure
 Tailwind CSS – Styling & responsiveness
 
 JavaScript (Vanilla) – DOM manipulation & interactivity
+
+Git & Github- Version control and deployement
+
+LEARNING RESOURCES
+
+HTML and CSS: SuperSimpleDev
+Link: https://youtu.be/G3e-cpL7ofc?si=p3eI8lZBMeiPKgny
+
+Javascript: https://youtu.be/g7T23Xzys-A?si=wkZfligBCY_xjiqg
+and also from PPT uploded in community
+
+Used AI tools like Chatgpt and Gemini to learn the tools for project.
+
+Thank you
+
+This project represents my first step into web development, and I look forward to learning and improving further.
